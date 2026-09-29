@@ -3,4 +3,4 @@
 # 10 minutes; a missing key, enabled: false, or any fetch/parse failure are all treated
 # as disabled (fail closed).
 v1.0.0:
-  enabled: true
+  enabled: false
