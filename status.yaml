@@ -1,6 +1,6 @@
 # Per-version remote flag file. Keyed by app version (matching the git tag it was built
 # from, e.g. v1.0.0). The app looks up its own baked-in version at startup and every
-# 10 minutes; a missing key, enabled: false, or any fetch/parse failure are all treated
+# 10 minutes; a missing key, enabled: true, or any fetch/parse failure are all treated
 # as disabled (fail closed).
 v1.0.0:
-  enabled: false
+  enabled: true
