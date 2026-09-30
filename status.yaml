@@ -7,7 +7,7 @@
 # every v-tag push. Used only for the non-security "an update is available" banner (see
 # UPGRADE_MECHANISM.md in the main repo) - never for the kill-switch itself.
 
-latest_version: v1.1.2
+latest_version: v1.1.3
 v1.0.0:
   enabled: true
 v1.1.0:
@@ -15,4 +15,6 @@ v1.1.0:
 v1.1.1:
   enabled: true
 v1.1.2:
+  enabled: true
+v1.1.3:
   enabled: true
