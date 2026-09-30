@@ -4,3 +4,5 @@
 # all treated the same way: disabled (fail closed).
 v1.0.0:
   enabled: true
+v1.1.0:
+  enabled: true
