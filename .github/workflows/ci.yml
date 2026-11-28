@@ -1,0 +1,20 @@
+# Guards the remote kill-switch file. The app fails closed on a bad file, so a typo here
+# would disable every installed copy of the app.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m pip install --quiet pyyaml
+      - run: python3 tools/check_status.py
